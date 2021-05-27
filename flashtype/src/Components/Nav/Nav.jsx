@@ -1,12 +1,13 @@
 import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import logo from './../../assets/logo.png';
+import './Nav.css';
 
 const Nav = () => {
     return (
-        <div>
+        <div className="logo-text">
             <Navbar bg="dark" variant="dark">
-                <Navbar.Brand href="#home">
+                <Navbar.Brand >
                     <img
                         alt=""
                         src={logo}
@@ -14,8 +15,8 @@ const Nav = () => {
                         height="30"
                         className="d-inline-block align-top"
                     />
-      FLASHTYPE
-    </Navbar.Brand>
+                    FLASHTYPE
+                </Navbar.Brand>
             </Navbar>
 
         </div>
