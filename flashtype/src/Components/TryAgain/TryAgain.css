@@ -1,0 +1,17 @@
+.TryAgain-container{
+    color:black;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 200;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btn-container{
+    padding: 20px;
+}
+
+.facebook,.try-again,.twitter{
+    padding: 20px;
+    margin-right: 20px;
+}

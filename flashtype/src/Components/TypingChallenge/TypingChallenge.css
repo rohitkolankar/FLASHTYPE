@@ -1,0 +1,20 @@
+.challenge-container{
+    color:black;
+}
+
+.container-main{
+    margin-top: 30px;
+   border-style: groove;
+}
+
+.printed-paragraph{
+    background-color:wheat; 
+}
+
+.textarea-container{
+    scrollbar-width:none;
+}
+
+textarea::-webkit-scrollbar{
+    display: none;
+}

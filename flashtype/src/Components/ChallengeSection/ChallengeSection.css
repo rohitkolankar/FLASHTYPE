@@ -1,0 +1,16 @@
+.challenge-section-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: auto;
+    background-color: #0f0d0d;
+
+}
+
+.challenge-section-header{
+    color: aliceblue;
+    font-family: "Bangers", cursive;
+    letter-spacing: 4px;
+    font-size: 70px;
+    text-align: center;
+}
