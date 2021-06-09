@@ -6,17 +6,22 @@ import Nav from './../Nav/Nav.jsx';
 
 
 const TotalTime = 60;
+const serviceUrl = "http://metaphorpsum.com/paragraphs/2/8";
 class App extends React.Component {
 
     state = {
 
-        selectedParagaraph: "I am rohit!",
+        selectedParagaraph: "",
         timeRemaining: TotalTime,
         timeStarted: false,
         words: 10,
         characters: 0,
         wpm: 0,
 
+    }
+
+    componentDidMount() {
+        fetch(serviceUrl).then(Response => Response.text()).then(data => { this.setState({ selectedParagaraph: data }) })
     }
 
     render() {
