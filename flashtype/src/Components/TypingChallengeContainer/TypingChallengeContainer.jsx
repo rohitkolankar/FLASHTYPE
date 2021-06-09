@@ -3,7 +3,7 @@ import Table from 'react-bootstrap/Table';
 import TypingChallenge from './../TypingChallenge/TypingChallenge.jsx'
 import './TypingChallengeContainer.css';
 
-const TypingChallengeContainer = () => {
+const TypingChallengeContainer = ({ timeRemaining, selectedParagaraph, words, characters, wpm }) => {
     return (
         <div className="typing-challenge-container">
             <Table striped bordered hover>
@@ -16,15 +16,15 @@ const TypingChallengeContainer = () => {
                 </thead>
                 <tbody>
                     <tr>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
+                        <td>{words}</td>
+                        <td>{characters}</td>
+                        <td>{wpm}</td>
                     </tr>
                 </tbody>
             </Table>
 
 
-            <TypingChallenge />
+            <TypingChallenge selectedParagaraph={selectedParagaraph} timeRemaining={timeRemaining} />
         </div>
     );
 }

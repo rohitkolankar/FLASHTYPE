@@ -6,18 +6,18 @@ import './TypingChallenge.css';
 
 
 
-const TypingChallenge = () => {
+const TypingChallenge = ({ selectedParagaraph, timeRemaining }) => {
 
     return (
         <div className="challenge-container">
             <div className="time-remain">
-                <h1>00:60</h1>
+                <h1>00:{timeRemaining}</h1>
                 Start typing to start the timer
             </div>
             <div className="container-main">
                 <Container>
                     <Row>
-                        <Col className="printed-paragraph">Hello everyone</Col>
+                        <Col className="printed-paragraph">{selectedParagaraph}</Col>
                         <Col><textarea className="textarea-container" placeholder="Start typing here..."></textarea></Col>
                     </Row>
                 </Container>
